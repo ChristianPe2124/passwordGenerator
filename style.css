@@ -22,6 +22,7 @@ h1 {
     font-weight: 900;
     padding-top: 10px;
     text-align: center;
+    text-transform: uppercase;
 }
 .wrapper {
     border: 5px solid #40A2E3;
