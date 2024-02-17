@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #EEEDEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #070F2B;
+}
+h1 {
+    font-size: clamp(25px, 4vw, 30px);
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 900;
+    padding-top: 10px;
+    text-align: center;
+}
+.wrapper {
+    border: 5px solid #40A2E3;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #1F2544;
+    width: clamp(300px, 40vw, 420px);
+    max-height: 450px;
+    position: relative;
+    padding: 10px;
+    backdrop-filter: blur(20px);
+}
+.wrapper button {
+    width: 100%;
+    margin-left: auto;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: clamp(15px, 3vw, 20px);
+    opacity: 0.7;
+    border-radius: 10px;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: bolder;
+}
+.wrapper button:hover {
+    opacity: 1;
+}
+.display {
+    margin-top: 20px;
+}
+.display input {
+    font-size: 20px;
+    outline: 0;
+    border: 0;
+    background-color: lightblue;
+    color: #1F2544;
+    padding: 1rem 1.2rem;
+    width: 100%;
+    border-radius: 10px;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-size: clamp(15px, 3vw, 20px);
+}
+.display input::placeholder {
+    font-size: 16px;
+    padding: 10px 0;
+    color: #070F2B;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-weight: 400;
+}
+
+.display input:hover {
+    box-shadow: 0 0 10px gray;
+}
+.display img {
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 50px;
+}
+.selector-wrapper {
+    padding: 10px 10px;
+}
+.selector-wrapper label {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+.selector-wrapper .pwdLength {
+    margin-left: auto;
+    width: 20%;
+    text-align: center;
+}
+.selector-wrapper .input-type {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
